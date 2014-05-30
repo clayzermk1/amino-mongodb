@@ -1,0 +1,48 @@
+{
+  "name": "amino-mongodb",
+  "version": "0.0.0",
+  "description": "MongoDB plugin for amino",
+  "main": "index.js",
+  "engines" : { "node" : ">=0.10" },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {
+    "mongodb-pubsub": "*"
+  },
+  "devDependencies": {
+    "amino": "~1.0.0",
+    "jsdoc": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "doc": "./node_modules/.bin/jsdoc -d doc index.js",
+    "test": "tap ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clayzermk1/amino-mongodb.git"
+  },
+  "keywords": [
+    "amino",
+    "mongodb",
+    "load-balancing",
+    "failover",
+    "cluster",
+    "scalability",
+    "performance",
+    "service",
+    "pub/sub",
+    "high-availability",
+    "cloud",
+    "redundancy",
+    "ipc"
+  ],
+  "author": "Clay Walker <clayzermk1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clayzermk1/amino-mongodb/issues"
+  },
+  "homepage": "https://github.com/clayzermk1/amino-mongodb"
+}
