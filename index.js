@@ -5,7 +5,7 @@ exports.attach = function (options) {
   var amino = this;
 
   if (typeof options === 'string') {
-    options = { "uri": (options || {}), "collection": (options || {}).collection || "buffer" };
+    options = { "uri": options, "collection": "buffer" };
   }
   else {
     options = { "uri": (options || {}).uri || "mongodb://localhost:27017/amino", "collection": (options || {}).collection || "buffer" };
