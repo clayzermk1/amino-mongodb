@@ -5,20 +5,17 @@
   "main": "index.js",
   "engines" : { "node" : ">=0.10" },
   "directories": {
-    "doc": "doc",
     "test": "test"
   },
   "dependencies": {
-    "mongodb-pubsub": "*"
+    "mongodb-pubsub": "clayzermk1/mongodb-pubsub"
   },
   "devDependencies": {
     "amino": "~1.0.0",
-    "jsdoc": "*",
     "mocha": "*"
   },
   "scripts": {
-    "doc": "./node_modules/.bin/jsdoc -d doc index.js",
-    "test": "tap ./test"
+    "test": "./node_modules/.bin/mocha --reporter spec --require ./test/common.js"
   },
   "repository": {
     "type": "git",
