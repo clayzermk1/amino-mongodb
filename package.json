@@ -15,7 +15,7 @@
     "mocha": "*"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --require ./test/common.js"
+    "test": "./node_modules/.bin/mocha --reporter spec --require ./test/common.js -t 3000"
   },
   "repository": {
     "type": "git",
